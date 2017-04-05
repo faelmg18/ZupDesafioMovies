@@ -1,7 +1,10 @@
 # ZupDesafioMovies
 Projeto criado para participar do processo seletivo Zup
+## Omdb
+A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por nosso usuários, voce pode ver mais em 
+[OmbdApi](http://www.omdbapi.com/) - The Open Movie Database.
 
-## Pagina Inciial
+## Pagina Incial
 ### Meus Filmes
 #### Aqui são listados todos os filmes salvos em Meus Filmes através do menu de Busca Filmes
 ![screenshot_20170405-161940](https://cloud.githubusercontent.com/assets/8068428/24724363/38baffb6-1a21-11e7-8e4a-32432d6d45ce.png)
@@ -70,13 +73,19 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
 ![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24725376/161b1316-1a25-11e7-9221-e3e9b5079785.gif)
 
 
-## Running the tests
+## Buscando filmes no dispositivo pelo titulo
 
-Explain how to run the automated tests for this system
+É possível buscar um filme no celular mesmo que não tenha internet, mas o filme ja deve estar salvo nos meus filmes 
 
-### Break down into end to end tests
+```
+ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
+ List<Movie> movies = movieRepository.retrieveAllByName(movieTitle);
 
-Explain what these tests test and why
+```
+
+### Buscando filme da api Omdb
+
+
 
 ```
 Give an example
