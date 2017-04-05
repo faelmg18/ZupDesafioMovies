@@ -3,10 +3,10 @@ Projeto criado para participar do processo seletivo Zup
 
 ## Pagina Inciial
 ### Meus Filmes
-
+#### Aqui são listados todos os filmes salvos em Meus Filmes através do menu de Busca Filmes
 ![screenshot_20170405-161940](https://cloud.githubusercontent.com/assets/8068428/24724363/38baffb6-1a21-11e7-8e4a-32432d6d45ce.png)
 
-Aqui são listados todos os filmes salvos em Meus Filmes através do menu de Busca Filmes
+
 
 ### Prerequisites
 
