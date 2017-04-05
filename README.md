@@ -82,13 +82,34 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
  List<Movie> movies = movieRepository.retrieveAllByName(movieTitle);
 
 ```
+![ezgif com-video-to-gif 2](https://cloud.githubusercontent.com/assets/8068428/24726023/40c8721e-1a27-11e7-846c-9784e503bcf5.gif)
 
 ### Buscando filme da api Omdb
 
-
+Para buscar um filme da api omdb é necessário instanciar a classe OmdbApi que foi criada por mim para esse projeto.
+A classe ela faz a chamda o Api Omdb passando como parâmetro na url o nome do filme
 
 ```
-Give an example
+Exemplo da chamada OmdbApi
+http://www.omdbapi.com/?t=ice
+
+```
+```
+Exemplo da chamada através da api criada
+OmdbApi omdbApi = new OmdbApi(getActivity());
+
+omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
+                    @Override
+                    public void onMovieFindMovie(Movie movie) {
+                        loadMovieToViewScreen((movie));
+                    }
+
+                    @Override
+                    public void onError(Exception e) {
+                        DialogBuilder.showErrorServerInformation(getContext());
+                    }
+                });
+
 ```
 
 ### And coding style tests
