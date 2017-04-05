@@ -7,32 +7,68 @@ Projeto criado para participar do processo seletivo Zup
 ![screenshot_20170405-161940](https://cloud.githubusercontent.com/assets/8068428/24724363/38baffb6-1a21-11e7-8e4a-32432d6d45ce.png)
 
 
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+## Buscando todos os filmes no dispositivos
+Para buscar os filmes ja salvos no dispositivo, o método retrieveAllGroupBy() da classe MovieDAO deve ser chamado, sendo assim irá retornar todos os filmes separandos por categoria dos filmes.
 
 ```
-Give examples
+Exemplos
+  
+   MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
+   LinkedHashMap<String, ArrayList<Movie>> hasMapMovies = movieRepository.retrieveAllGroupBy();
+   
+   ### Colocando em um Adapter
+   CategorizedMoviesAdapter mAdapter = new CategorizedMoviesAdapter(getActivity())
+   
+   for (String key : hasMapMovies.keySet()) {
+            mAdapter.addMovies(new CategorizedMovies(hasMapMovies.get(key), key));
+        }
+        
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setAdapter(mAdapter);
+   
+  
+```
+### Mostando detalhes do filme
+
+Para mostrar o detalhes do filme é possível cliclar em qualquer um dos filmes da lista, sendo assim é chamada a tela onde se mostra os detalhes
+
+![ezgif com-video-to-gif](https://cloud.githubusercontent.com/assets/8068428/24725001/a8b74124-1a23-11e7-830f-f8cf80e61935.gif)
+
+
+### Deletando o filme da minha lista de filmes
+
+
+Para deletar o filme é necessário clickar no botão com uma lixeira no lado direito da tela.
+logo após o evento ser acionado, é chamado o método  movieRepository.delete(movie);
+
+
+```
+MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
+
+   if(movie != null){
+                    DialogBuilder.showDialogPositiveNegative(MovieDetail.this, getString(R.string.stringEmpty), getString(R.string.remove_movie), new DialogBuilder.ButtonCallback() {
+                        @Override
+                        protected void onPositive(AlertDialog.Builder builder, DialogInterface dialogInterface) {
+                            movieRepository.delete(movie);
+                            setResult(RESULT_OK);
+                            finish();
+                            Toast.makeText(MovieDetail.this, R.string.deleted_movie_successfully,Toast.LENGTH_LONG).show();
+                        }
+
+                        @Override
+                        protected void onNegative(AlertDialog.Builder builder, DialogInterface dialogInterface) {
+                            dialogInterface.dismiss();
+                        }
+                    });
+                }
+
+
 ```
 
-### Installing
+![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24725376/161b1316-1a25-11e7-9221-e3e9b5079785.gif)
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
