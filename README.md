@@ -1,9 +1,12 @@
 # ZupDesafioMovies
 Projeto criado para participar do processo seletivo Zup
 
-## Buscando Filmes
+## Pagina Inciial
+### Meus Filmes
 
-No menu drawer você pode escolher a opção para buscar um filme, nela também são buscados seriados documentatio etc.
+![screenshot_20170405-161940](https://cloud.githubusercontent.com/assets/8068428/24724363/38baffb6-1a21-11e7-8e4a-32432d6d45ce.png)
+
+Aqui são listados todos os filmes salvos em Meus Filmes através do menu de Busca Filmes
 
 ### Prerequisites
 
