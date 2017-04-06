@@ -1,5 +1,4 @@
 
-[![Scrutinizer Code Quality](https://github.com/FasterXML/jackson-core)](https://github.com/FasterXML/jackson-core)
 
 # ZupDesafioMovies
 Projeto criado para participar do processo seletivo Zup
@@ -108,9 +107,9 @@ http://www.omdbapi.com/?t=ice
 Exemplo da chamada através da api criada
 OmdbApi omdbApi = new OmdbApi(getActivity());
 
-omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
+ omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
                     @Override
-                    public void onMovieFindMovie(Movie movie) {
+                    public void onFindMovie(Movie movie) {
                         loadMovieToViewScreen((movie));
                     }
 
@@ -124,7 +123,8 @@ omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
 
 ## Contribuições
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 ## Versioning
 
@@ -132,7 +132,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Jackson Core databind** - *Initial work* - [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.0.1)
+* **Jackson Core annotations** - *Initial work* - [jackson-annotations](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations/2.2.1)
+* **Universal Image Loader** - *Initial work* - [Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
