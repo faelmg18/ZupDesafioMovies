@@ -1,8 +1,18 @@
+
+[![Scrutinizer Code Quality](https://github.com/FasterXML/jackson-core)](https://github.com/FasterXML/jackson-core)
+
 # ZupDesafioMovies
 Projeto criado para participar do processo seletivo Zup
 ## Omdb
 A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por nosso usuários, voce pode ver mais em 
 [OmbdApi](http://www.omdbapi.com/) - The Open Movie Database.
+
+### Prerequisities
+
+
+Android SKD 21, 5.0 ou superior
+
+ * Android (Mínimo 5.0)
 
 ## Pagina Incial
 ### Meus Filmes
@@ -33,7 +43,7 @@ Exemplos
    
   
 ```
-### Mostando detalhes do filme
+### Mostrando detalhes do filme
 
 Para mostrar o detalhes do filme é possível cliclar em qualquer um dos filmes da lista, sendo assim é chamada a tela onde se mostra os detalhes
 
@@ -112,25 +122,7 @@ omdbApi.findMovie(movieTitle, new OmdApiFinderImp() {
 
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
+## Contribuições
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
