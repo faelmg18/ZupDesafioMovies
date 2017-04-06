@@ -75,8 +75,6 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
                         }
                     });
                 }
-
-
 ```
 
 ![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24725376/161b1316-1a25-11e7-9221-e3e9b5079785.gif)
@@ -118,7 +116,6 @@ OmdbApi omdbApi = new OmdbApi(getActivity());
                         DialogBuilder.showErrorServerInformation(getContext());
                     }
                 });
-
 ```
 
 ## Contribuições
