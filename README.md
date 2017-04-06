@@ -3,10 +3,10 @@
 # ZupDesafioMovies
 Projeto criado para participar do processo seletivo Zup
 ## Omdb
-A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por nosso usuários, voce pode ver mais em 
+A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por seus usuários, você pode ver mais em
 [OmbdApi](http://www.omdbapi.com/) - The Open Movie Database.
 
-### Prerequisities
+### Pré-requisitos
 
 
 Android SKD 21, 5.0 ou superior
@@ -15,12 +15,12 @@ Android SKD 21, 5.0 ou superior
 
 ## Pagina Incial
 ### Meus Filmes
-#### Aqui são listados todos os filmes salvos em Meus Filmes através do menu de Busca Filmes
+#### Aqui são listados todos os filmes salvos em no dispositivo através do menu de Busca Filmes
 ![screenshot_20170405-161940](https://cloud.githubusercontent.com/assets/8068428/24724363/38baffb6-1a21-11e7-8e4a-32432d6d45ce.png)
 
 
-## Buscando todos os filmes no dispositivos
-Para buscar os filmes ja salvos no dispositivo, o método retrieveAllGroupBy() da classe MovieDAO deve ser chamado, sendo assim irá retornar todos os filmes separandos por categoria dos filmes.
+## Buscando todos os filmes salvos no dispositivos
+Para buscar os filmes já salvos no dispositivo, o método retrieveAllGroupBy() da classe MovieDAO deve ser chamado, sendo assim irá retornar todos os filmes separados por categoria dos filmes.
 
 ```
 Exemplos
@@ -44,7 +44,7 @@ Exemplos
 ```
 ### Mostrando detalhes do filme
 
-Para mostrar o detalhes do filme é possível cliclar em qualquer um dos filmes da lista, sendo assim é chamada a tela onde se mostra os detalhes
+Para mostrar o detalhes do filme é possível clicar em qualquer um dos filmes da lista, sendo assim é chamada a tela onde se mostra os detalhes.
 
 ![ezgif com-video-to-gif](https://cloud.githubusercontent.com/assets/8068428/24725001/a8b74124-1a23-11e7-830f-f8cf80e61935.gif)
 
@@ -52,8 +52,8 @@ Para mostrar o detalhes do filme é possível cliclar em qualquer um dos filmes 
 ### Deletando o filme da minha lista de filmes
 
 
-Para deletar o filme é necessário clickar no botão com uma lixeira no lado direito da tela.
-logo após o evento ser acionado, é chamado o método  movieRepository.delete(movie);
+Para deletar o filme é necessário clicar no botão com uma lixeira no lado direito da tela.
+logo após o evento ser acionado, é chamado o método  movieRepository.delete(movie) passando como parâmetro o filme a ser deletado;
 
 
 ```
@@ -82,9 +82,9 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
 ![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24725376/161b1316-1a25-11e7-9221-e3e9b5079785.gif)
 
 
-## Buscando filmes no dispositivo pelo titulo
+## Buscando filmes no dispositivo pelo título.
 
-É possível buscar um filme no celular mesmo que não tenha internet, mas o filme ja deve estar salvo nos meus filmes 
+É possível buscar um filme no celular mesmo que não tenha internet, mas o filme já deve estar salvo nos meus filmes.
 
 ```
  MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRepository();
@@ -96,7 +96,7 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
 ### Buscando filme da api Omdb
 
 Para buscar um filme da api omdb é necessário instanciar a classe OmdbApi que foi criada por mim para esse projeto.
-A classe ela faz a chamda o Api Omdb passando como parâmetro na url o nome do filme
+A classe faz a chamada da Api Omdb passando como parâmetro na url o nome do filme.
 
 ```
 Exemplo da chamada OmdbApi
