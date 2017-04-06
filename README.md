@@ -123,18 +123,14 @@ OmdbApi omdbApi = new OmdbApi(getActivity());
 
 ## Contribuições
 
+* **Jackson Core databind** - [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.0.1)
+* **Jackson Core annotations** - [jackson-annotations](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations/2.2.1)
+* **Universal Image Loader** -  [Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+## Autor
 
-## Versioning
+* **Rafael Henrique Fernandes** - [Rafael Fernandes](https://github.com/faelmg18)
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Jackson Core databind** - *Initial work* - [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.0.1)
-* **Jackson Core annotations** - *Initial work* - [jackson-annotations](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations/2.2.1)
-* **Universal Image Loader** - *Initial work* - [Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
