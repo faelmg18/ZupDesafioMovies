@@ -131,16 +131,8 @@ OmdbApi omdbApi = new OmdbApi(getActivity());
 
 * **Rafael Henrique Fernandes** - [Rafael Fernandes](https://github.com/faelmg18)
 
+## Licença
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE.md] (LICENSE.md) para obter detalhes
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
