@@ -42,6 +42,7 @@ Exemplos
    
   
 ```
+
 ### Mostrando detalhes do filme
 
 Para mostrar o detalhes do filme é possível clicar em qualquer um dos filmes da lista, sendo assim é chamada a tela onde se mostra os detalhes.
