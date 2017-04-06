@@ -6,6 +6,10 @@ Projeto criado para participar do processo seletivo Zup
 A API OMDb é um serviço gratuito na web para obter informações de filmes, todos os conteúdos e imagens no site são contribuídos e mantidos por seus usuários, você pode ver mais em
 [OmbdApi](http://www.omdbapi.com/) - The Open Movie Database.
 
+## APK
+Para ver o aplicativo funcionando, baixe no link
+[DesafioZup APK](https://drive.google.com/open?id=0BwLShtZOjYrbMlNyaHNBUlhDREk)
+
 ### Pré-requisitos
 
 
@@ -42,6 +46,8 @@ Exemplos
    
   
 ```
+![ezgif com-video-to-gif](https://cloud.githubusercontent.com/assets/8068428/24764064/9636ad9a-1ac9-11e7-946f-4facd16e6abc.gif)
+
 
 ### Mostrando detalhes do filme
 
@@ -90,7 +96,8 @@ MovieRepository movieRepository = RepositoryFactory.getInstance().createMoviesRe
  List<Movie> movies = movieRepository.retrieveAllByName(movieTitle);
 
 ```
-![ezgif com-video-to-gif 2](https://cloud.githubusercontent.com/assets/8068428/24726023/40c8721e-1a27-11e7-846c-9784e503bcf5.gif)
+
+![ezgif com-video-to-gif 1](https://cloud.githubusercontent.com/assets/8068428/24764200/f46a0704-1ac9-11e7-8430-7ceb58e1d35b.gif)
 
 ### Buscando filme da api Omdb
 
@@ -118,7 +125,7 @@ OmdbApi omdbApi = new OmdbApi(getActivity());
                     }
                 });
 ```
-
+![ezgif com-video-to-gif 2](https://cloud.githubusercontent.com/assets/8068428/24764385/91cb94a4-1aca-11e7-9519-4b6d9580854d.gif)
 ## Contribuições
 
 * **Jackson Core databind** - [jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.0.1)
